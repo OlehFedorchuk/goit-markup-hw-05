@@ -70,6 +70,8 @@ body {
 .header-list-link {
     text-decoration: none;
     color: var(--main-page-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-list-link:hover,
@@ -87,6 +89,12 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-tel:hover,
+.address-tel:focus {
+    color: #404BBF;
 }
 
 .address-list {
@@ -153,7 +161,7 @@ body {
 }
 
 .hero-button {
-    display: flex;
+
     background-color: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -162,11 +170,7 @@ body {
     height: 56px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.address-tel:hover,
-.address-tel:focus {
-    color: #404BBF;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .hero-button:hover,
@@ -318,11 +322,16 @@ body {
     align-items: center;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
-.soc-link:hover {
+.soc-link:hover,
+.soc-link:focus {
     background-color: #404BBF;
+
 }
 
 .soc-icon {
@@ -353,17 +362,24 @@ body {
 .company-items {
     width: calc((100%-120px)/6);
     height: 88px;
+
 }
 
 .company-link {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 16px 32px;
     border: 1px solid #8e8f99;
     border-radius: 5px;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.company-icon {
+    fill: #8E8F99;
+
+}
+
 
 .company-link:is(:hover, :focus) {
     border-color: #404BBF;
@@ -371,11 +387,10 @@ body {
 
 .company-link:is(:hover, :focus) .company-icon {
     fill: #404BBF;
+
 }
 
-.company-icon {
-    fill: #8E8F99;
-}
+
 
 /*---------------Footer--------------- */
 
@@ -461,6 +476,7 @@ body {
     gap: 24px;
     margin-top: 96px;
     margin-bottom: 72px;
+
 }
 
 .btn-items:hover,
@@ -483,6 +499,7 @@ body {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text {
@@ -530,6 +547,11 @@ body {
 
 img {
     display: block;
+}
+
+.gallery-item {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .gallery-item:is(:hover, :focus) {
