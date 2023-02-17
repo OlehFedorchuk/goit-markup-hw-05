@@ -70,13 +70,57 @@ body {
 .header-list-link {
     text-decoration: none;
     color: var(--main-page-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .header-list-link:hover,
 .header-list-link:focus {
     color: #404BBF;
+
+}
+
+/* .header-list-item::after {
+    content: "";
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    width: auto;
+    height: 100px;
+    background-color: #404BBF;
+    display: none;
+
+} */
+.header-list-item {}
+
+.header-list-link::after {
+    content: "";
+    /* display: flex; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    width: auto;
+    height: 4px;
+    background-color: #404BBF;
+    display: none;
+    position: relative;
+
+}
+
+/* .header-list-item:hover::after {
+    display: block;
+    transform: translateY(24px);
+    
+} */
+
+.header-list-link:hover::after {
+    display: block;
+    transform: translateY(24px);
+
+
+
 }
 
 /* ---------------Address---------------*/
@@ -89,7 +133,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-tel:hover,
@@ -170,7 +216,9 @@ body {
     height: 56px;
     margin-left: auto;
     margin-right: auto;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -322,10 +370,9 @@ body {
     align-items: center;
     border-radius: 50%;
     background-color: #4D5AE5;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
@@ -363,6 +410,7 @@ body {
     width: calc((100%-120px)/6);
     height: 88px;
 
+
 }
 
 .company-link {
@@ -372,14 +420,16 @@ body {
     padding: 16px 32px;
     border: 1px solid #8e8f99;
     border-radius: 5px;
-    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icon {
     fill: #8E8F99;
 
-}
 
+}
 
 .company-link:is(:hover, :focus) {
     border-color: #404BBF;
@@ -392,10 +442,11 @@ body {
 
 
 
+
 /*---------------Footer--------------- */
 
 .bg-color-footer {
-    background-color: var(--main-page-color)
+    background-color: var(--main-page-color);
 }
 
 .logo-footer {
@@ -457,6 +508,9 @@ body {
 
 .footer-soc-link {
     background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:is(:hover, :focus) {
@@ -499,7 +553,9 @@ body {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text {
@@ -509,6 +565,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    transition-property: color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /*---------------Gallery--------------- */
@@ -550,7 +610,9 @@ img {
 }
 
 .gallery-item {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
