@@ -417,6 +417,42 @@ body {
     fill: #404BBF;
 }
 
+/* ---------- */
+/* .test {
+    transition: transform 500ms ease;
+}
+
+.test {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    animation: 10000ms test-light;
+    transition: transform 500ms ease;
+} */
+/*
+
+.test:hover {
+    transform: scale(2);
+    animation-name: test-light;
+    animation-duration: 3000ms;
+} */
+
+/* @keyframes test-light {
+    0% {
+        fill: red;
+        background-color: teal;
+    }
+
+    50% {
+        fill: green;
+        background-color: orange;
+    }
+
+    100% {
+        fill: #404BBF;
+        background-color: deepskyblue;
+    }
+
+} */
 /*---------------Footer--------------- */
 
 .bg-color-footer {
