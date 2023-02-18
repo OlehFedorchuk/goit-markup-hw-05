@@ -93,7 +93,6 @@ body {
     background-color: #404BBF;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     opacity: 0;
 }
 
@@ -302,7 +301,9 @@ body {
 
 .team-bg-color {
     background-color: #fff;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -418,9 +419,6 @@ body {
     fill: #404BBF;
 
 }
-
-
-
 
 /*---------------Footer--------------- */
 
@@ -628,35 +626,47 @@ img {
 .backdrop {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 161, 57, 0.12);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 576px;
-    background-color: #564e4e;
-    border-radius: 5px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     padding-top: 24px;
     padding-right: 24px;
+
 }
 
 .modal-close {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #999;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    background-color: #d5c5c5;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    padding: 0;
+    padding: 8;
 
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
