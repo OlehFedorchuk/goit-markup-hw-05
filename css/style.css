@@ -661,8 +661,12 @@ img {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    padding: 8;
+}
 
+.modal-close:is(:hover, :focus) {
+    border: #404BBF;
+    background-color: #404BBF;
+    fill: #ffffff
 }
 
 .is-hidden {
