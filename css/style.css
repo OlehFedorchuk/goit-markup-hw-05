@@ -764,15 +764,15 @@ textarea:focus {
 }
 
 .modal-form-box {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-form-agreement-chackbox {
     display: inline-flex;
     width: 16px;
     height: 16px;
-    border-radius: 6px;
-    border: 2px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     align-items: center;
     justify-content: center;
@@ -780,6 +780,15 @@ textarea:focus {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: transparent;
+}
+
+.model-form-agreement-field {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    z-index: 5;
+
 }
 
 .checkbox {
@@ -792,7 +801,9 @@ textarea:focus {
 .checkbox:checked+.model-form-agreement-field>.modal-form-agreement-chackbox {
     border: none;
     border-color: transparent;
-    background-color: #F4F4FD
+    background-color: #404bbf;
+    fill: #F4F4FD;
+
 }
 
 
@@ -822,6 +833,7 @@ textarea:focus {
 
 .modal-form-agreement-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
