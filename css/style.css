@@ -800,7 +800,6 @@ textarea:focus {
 
 .checkbox:checked+.model-form-agreement-field>.modal-form-agreement-chackbox {
     border: none;
-    border-color: transparent;
     background-color: #404bbf;
     fill: #F4F4FD;
 
