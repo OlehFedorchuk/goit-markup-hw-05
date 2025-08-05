@@ -731,6 +731,7 @@ input::placeholder {
 
 .field-container {
     position: relative;
+    /* margin-bottom: 8px; */
 }
 
 .input-icon {
@@ -764,6 +765,10 @@ textarea:focus {
 }
 
 .modal-form-box {
+    margin-bottom: 8px;
+}
+
+.modal-form-box-comment {
     margin-bottom: 16px;
 }
 
@@ -842,7 +847,7 @@ textarea:focus {
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .modal-form-agreement {
